@@ -120,7 +120,7 @@ See [samples/charts](samples/charts) for a pie chart displaying logins per ident
 
 >Shoutout to [d3pie](hhttp://d3pie.org).
 
-Put some of these together and create custom dashboads :fireworks: :boom: :zap:.
+Put some of these together and create custom dashboards :fireworks: :boom: :zap:.
 
 Contributing
 ------------
