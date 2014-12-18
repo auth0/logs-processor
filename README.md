@@ -35,7 +35,7 @@ processor.start();
 
 Available in the [samples](samples) folder, monthly signup per app:
 ```javascript
-var processor = require('../lib').create({
+var processor = require('auth0-logs-processor').create({
   domain: 'MY_AUTH0_DOMAIN',
   clientId: 'MY_AUTH0_CLIENT',
   clientSecret: 'MY_AUTH0_SECRET',
@@ -78,7 +78,7 @@ And the same as above assuming your logs fit into memory (dedicated to [@woloski
 ```javascript
 var _ = require('lodash');
 
-var processor = require('../lib').create({
+var processor = require('auth0-logs-processor').create({
   domain: 'MY_AUTH0_DOMAIN',
   clientId: 'MY_AUTH0_CLIENT',
   clientSecret: 'MY_AUTH0_SECRET',
@@ -109,6 +109,18 @@ processor.done(function(){
 
 processor.start();
 ```
+
+Charts
+------
+Charts are cool, and you can use the data to create your own :smiley:.
+
+See [samples/charts](samples/charts) for a pie chart displaying logins per identity provider. It looks like this:
+
+![](https://cldup.com/5frJxl3soL.png)
+
+>Shoutout to [d3pie](hhttp://d3pie.org).
+
+Put some of these together and create custom dashboads :fireworks: :boom: :zap:.
 
 Contributing
 ------------
