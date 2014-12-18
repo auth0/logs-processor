@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dschenkelman/auth0-logs-processor"
+    "url": "https://github.com/auth0/auth0-logs-processor"
   },
   "keywords": [
     "auth0",
     "logs",
     "stats"
   ],
-  "author": "Damian Schenkelman",
+  "author": "Auth0",
   "license": "MIT",
   "devDependencies": {
     "jshint": "^2.5.10"
