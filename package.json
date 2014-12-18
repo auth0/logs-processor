@@ -1,0 +1,28 @@
+{
+  "name": "auth0-logs-processor",
+  "version": "0.0.0",
+  "description": "Small library to process all log entries from an Auth0 account. Useful to obtain stats.",
+  "main": "lib/index.js",
+  "scripts": {
+    "jshint": "find lib -name '*.js' -print0 | xargs -0 jshint"
+  },
+  "keywords": [
+    "auth0",
+    "logs",
+    "stats"
+  ],
+  "author": "Damian Schenkelman",
+  "license": "MIT",
+  "devDependencies": {
+    "jshint": "^2.5.10"
+  },
+  "jshintConfig": {
+    "strict": "true",
+    "globalstrict": "true"
+  },
+  "dependencies": {
+    "auth0": "^0.8.0",
+    "request": "^2.51.0",
+    "url-join": "0.0.1"
+  }
+}
