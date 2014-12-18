@@ -6,6 +6,10 @@
   "scripts": {
     "jshint": "find lib -name '*.js' -print0 | xargs -0 jshint"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dschenkelman/auth0-logs-processor"
+  },
   "keywords": [
     "auth0",
     "logs",
