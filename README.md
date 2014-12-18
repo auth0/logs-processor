@@ -74,7 +74,7 @@ processor.done(function(){
 processor.start();
 ```
 
-And the same as above assuming your logs fit into memory (dedicated to @woloski):
+And the same as above assuming your logs fit into memory (dedicated to [@woloski](https://github.com/woloski)):
 ```javascript
 var _ = require('lodash');
 
