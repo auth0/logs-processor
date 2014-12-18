@@ -74,6 +74,42 @@ processor.done(function(){
 processor.start();
 ```
 
+And the same as above assuming your logs fit into memory (dedicated to @woloski):
+```javascript
+var _ = require('lodash');
+
+var processor = require('../lib').create({
+  domain: 'MY_AUTH0_DOMAIN',
+  clientId: 'MY_AUTH0_CLIENT',
+  clientSecret: 'MY_AUTH0_SECRET',
+});
+
+var entries = [];
+
+processor.each(function(entry){
+  entries.push(entry);
+});
+
+processor.done(function(){
+  var groups = _.chain(entries)
+    .filter(function(e){
+      return e.type === 'ss'
+    })
+    .groupBy(function(e){
+      var date = new Date(e.date);
+
+      return date.getUTCFullYear() + '-' + date.getUTCMonth() + ' ' + e.client_id;
+    })
+    .value();
+
+  _.forOwn(groups, function(value, key) {
+    console.log(key + ': ' + value.length);
+  });
+});
+
+processor.start();
+```
+
 Contributing
 ------------
 Feel free to add new samples by sending PRs.
